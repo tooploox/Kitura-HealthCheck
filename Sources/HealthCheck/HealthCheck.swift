@@ -13,7 +13,7 @@ import LoggerAPI
 
 public class HealthCheck: RouterMiddleware {
     
-    func handle(request: RouterRequest, response: RouterResponse, next: () -> Void) throws {
+    public func handle(request: RouterRequest, response: RouterResponse, next: () -> Void) throws {
         try response.end()
         Log.info("Health check performed. Status: OK.")
     }
