@@ -11,7 +11,7 @@ import Kitura
 import HeliumLogger
 import LoggerAPI
 
-class HealthCheck: RouterMiddleware {
+public class HealthCheck: RouterMiddleware {
     
     func handle(request: RouterRequest, response: RouterResponse, next: () -> Void) throws {
         try response.end()
